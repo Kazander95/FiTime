@@ -1,0 +1,7 @@
+The Android Project folder contains all files (gradle build xml etc) that were used in the FiTime project.
+To open it in android studio, select file, open existing project, and navigate to and select the app folder in the Android Project Folder.
+
+The APK File folder contains the installable package that will work on any android phone.
+
+The Java Class Files contain all of the various classes used in the project that define the more important things in the scope.
+They are not compilable outside of Android Studio. They are taken from app > SRC > main > java > co inside of the Android Project Folder.

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Paul Burke
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/treadmill_back"
+    android:weightSum="1">
+
+    <Button
+        android:text="Start"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:layout_x="94dp"
+        android:layout_y="509dp"
+        android:elevation="0dp" />
+
+    <TextView
+        android:text="FiTime is a Gym-Tool Application. \n\n\n To Use: \n\n - Touch Create to create the tool you need \n\n - Swipe a tool to the left or right to delete it \n\n - Touch Clear to Clear all tools on screen \n\n - Touch Info or hit back to get back to this screen \n\n\n\n\n\n Contact us at: FitTimeApp@gmail.com"
+        android:layout_width="301dp"
+        android:layout_height="387dp"
+        android:id="@+id/textInfo"
+        android:layout_x="30dp"
+        android:layout_y="130dp"
+        android:textColor = "@android:color/white"
+        android:textSize = "15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        app:srcCompat="@drawable/fitime_info"
+        android:id="@+id/imageView2" />
+
+    <AbsoluteLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:weightSum="1">
+
+
+        <Button
+            android:text="Create"
+            android:textColor="@android:color/white"
+            android:layout_width="147dp"
+            android:layout_height="79dp"
+            android:layout_x="105dp"
+            android:layout_y="16dp"
+            android:id="@+id/buttonCreate"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:text="Info"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonInfo"
+            android:layout_x="0dp"
+            android:layout_y="29dp" />
+
+        <Button
+            android:text="Clear"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear"
+            android:layout_x="271dp"
+            android:layout_y="28dp" />
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_weight="1.08"
+        android:layout_x="0dp"
+        android:layout_y="15dp">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="307dp"
+            android:layout_height="451dp"
+            android:layout_below="@+id/absoluteLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_x="28dp"
+            android:layout_y="134dp">
+
+        </FrameLayout>
+
+    </AbsoluteLayout>
+
+</AbsoluteLayout>
